@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <title></title>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+      <description></description>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action='https://survey-form.freecodecamp.rocks'>
+      
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <br>
+        <br>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <br>
+        <br>
+       <label id="number-label" for="age">Age (optional) <input id="number" type="number" name="age" min="10" max="99" placeholder="99"></label>
+        <br>
+        <br>
+        <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="referrer" >
+            <option disabled="disabled" selected="selected" value="1">Select current role</option>
+            <option value="2">Student</option>
+            <option value="3">Full Time Job</option>
+            <option value="4">Full Time Learner</option>
+            <option value="5">Prefer not to say</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+        <br>
+        <br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="Definitely"><input id="Definitely" type="radio" name="recommend-option" value="Definitely" class="inline" /> Definitely</label><br />
+        <label for="Maybe"><input id="Maybe" type="radio" name="recommend-option" value="Maybe" class="inline" /> Maybe</label><br />
+        <label for="Not sure"><input id="Not sure" type="radio" name="recommend-option" value="Not sure" class="inline" /> Not sure</label>
+        <br>
+        <br>
+        <label for="dropdown">What is your favorite feature of freeCodeCamp?
+          <select id="dropdown" name="referrer" >
+            <option disabled="disabled" selected="selected" value="1">Select an option</option>
+            <option value="2">Challenges</option>
+            <option value="3">Projects</option>
+            <option value="4">Community</option>
+            <option value="5">Open Source</option>
+          </select>
+        </label>
+        <br>
+        <br>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+    <label><input type="checkbox" name="Front-end Projects" value="Front-end Projects" checked> Front-end Projects</label><br />
+    <label><input type="checkbox" name="Back-end Projects" value="Back-end Projects"> Back-end Projects</label><br />
+    <label><input type="checkbox" name="Data Visualization" value="Data Visualization"> Data Visualization</label><br />
+    <label><input type="checkbox" name="Challenges" value="Challenges"> Challenges</label><br />
+    <label><input type="checkbox" name="Open Source Community" value="Open Source Community"> Open Source Community</label><br />
+    <label><input type="checkbox" name="Gitter help rooms" value="Gitter help rooms"> Gitter help rooms</label><br />
+    <label><input type="checkbox" name="Videos" value="Videos"> Videos</label><br />
+    <label><input type="checkbox" name="City Meetups" value="City Meetups"> City Meetups</label><br />
+    <label><input type="checkbox" name="Wiki" value="Wiki"> Wiki</label><br />
+    <label><input type="checkbox" name="Forum" value="Forum"> Forum</label><br />
+    <label><input type="checkbox" name="Additional Courses" value="Additional Courses"> Additional Courses</label><br />
+        <br>
+        <br>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+     <br>
+     <br>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
